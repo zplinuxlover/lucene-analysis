@@ -1,0 +1,51 @@
+apply plugin: "java"
+
+version = '1.0.0.RELEASE'
+
+sourceCompatibility = 1.8
+
+[compileJava, compileTestJava]*.options*.encoding = 'utf-8'
+
+ext {
+    solrVersion = "7.3.1"
+}
+
+sourceSets {
+    main {
+        java { srcDirs = ['src/main/java' ] }
+        resources { srcDirs = ["src/main/resources"] }
+    }
+}
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+    mavenCentral()
+}
+
+dependencies {
+    // lucene
+    compile "org.apache.lucene:lucene-core:${solrVersion}"
+    compile "org.apache.lucene:lucene-queryparser:${solrVersion}"
+    compile "org.apache.lucene:lucene-highlighter:${solrVersion}"
+    compile "org.apache.lucene:lucene-analyzers-common:${solrVersion}"
+    compile "org.apache.lucene:lucene-queries:${solrVersion}"
+    // solr
+    compile "org.apache.solr:solr-core:${solrVersion}"
+    compile "org.apache.solr:solr-solrj:${solrVersion}"
+    compile "org.apache.solr:solr-cell:${solrVersion}"
+    compile "org.apache.solr:solr-clustering:${solrVersion}"
+    compile "org.apache.solr:solr-dataimporthandler:${solrVersion}"
+    compile "org.apache.solr:solr-dataimporthandler-extras:${solrVersion}"
+    compile "org.apache.solr:solr-langid:${solrVersion}"
+    compile "org.apache.solr:solr-velocity:${solrVersion}"
+    compile "com.alibaba:fastjson:${fastJsonVersion}"
+    compile "redis.clients:jedis:${jedisVersion}"
+    compile 'org.eweb4j:fel:0.8'
+    compile "com.google.code.gson:gson:2.4"
+    compile "log4j:log4j:${log4jVersion}"
+    compile "org.slf4j:slf4j-log4j12:${slfLog4jVersion}"
+    testCompile "org.apache.solr:solr-test-framework:${solrVersion}"
+    testCompile 'junit:junit:4.12'
+}
+
+
