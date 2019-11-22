@@ -38,12 +38,8 @@ dependencies {
     compile "org.apache.solr:solr-dataimporthandler-extras:${solrVersion}"
     compile "org.apache.solr:solr-langid:${solrVersion}"
     compile "org.apache.solr:solr-velocity:${solrVersion}"
-    compile "com.alibaba:fastjson:${fastJsonVersion}"
-    compile "redis.clients:jedis:${jedisVersion}"
     compile 'org.eweb4j:fel:0.8'
     compile "com.google.code.gson:gson:2.4"
-    compile "log4j:log4j:${log4jVersion}"
-    compile "org.slf4j:slf4j-log4j12:${slfLog4jVersion}"
     testCompile "org.apache.solr:solr-test-framework:${solrVersion}"
     testCompile 'junit:junit:4.12'
 }
