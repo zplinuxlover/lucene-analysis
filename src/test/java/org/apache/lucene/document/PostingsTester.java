@@ -1,6 +1,8 @@
 package org.apache.lucene.document;
 
+import com.google.common.collect.Lists;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -14,6 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class PostingsTester {
 
@@ -34,18 +37,32 @@ public class PostingsTester {
         type.setStored(true);
         type.setTokenized(true);
         type.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+        type.freeze();
         //
         Document doc = new Document();
-        doc.add(new Field("content", "the book is ", type));
-        doc.add(new Field("title", "book", type));
+        doc.add(new Field("content", getFieldValue("a", 'a'), type));
         writer.addDocument(doc);
         //
         doc = new Document();
-        doc.add(new Field("content", "book", type));
+        doc.add(new Field("content", getFieldValue("ab", 'b'), type));
+        writer.addDocument(doc);
+        //
+        doc = new Document();
+        doc.add(new Field("content", getFieldValue("abc", 'c'), type));
         writer.addDocument(doc);
 
         writer.commit();
         writer.close();
+    }
+
+    private String getFieldValue(String strPrefix, char charPrefix) {
+        List<String> vector = Lists.newArrayListWithCapacity(32);
+        vector.add(String.format("%s%c", strPrefix, charPrefix));
+        for (int t = 1; t < 26; ++t) {
+            vector.add(String.format("%s%s%c", vector.get(t - 1), strPrefix, charPrefix + t));
+        }
+        String fieldValue = StringUtils.join(vector, "");
+        return fieldValue;
     }
 
     private void addDocument(IndexWriter writer, long value) throws IOException {
