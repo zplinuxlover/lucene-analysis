@@ -147,27 +147,16 @@ LogMergePolicy
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0513/58.html
 
 6. 索引文件格式
-
-索引文件之segments_N
+索引文件之segments_N (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
-索引文件之si
+索引文件之si (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
-索引文件之cfs&&cfe
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0710/73.html
-索引文件之fnm
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
-索引文件之fdx&&fdt
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
-索引文件之tvx&&tvd
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
-倒排表（中）
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0428/55.html
+FST算法（上）
+https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
 倒排表（上）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
-索引文件之liv
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
-索引文件之dim&&dii
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
+倒排表（中）
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0428/55.html
 索引文件之tim&&tip
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0401/43.html
 索引文件之doc
@@ -176,9 +165,17 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/42.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/41.html
 索引文件之nvd&&nvm
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
+索引文件之fnm
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
+索引文件之fdx&&fdt
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
+索引文件之tvx&&tvd
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
+索引文件之liv
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
+索引文件之dim&&dii
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
 LZ4算法（上）
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0226/37.html
-FST算法（上）
-https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
 Bkd-Tree
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html

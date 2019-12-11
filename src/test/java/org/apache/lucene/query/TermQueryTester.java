@@ -41,15 +41,16 @@ public class TermQueryTester {
         type.setTokenized(true);
         type.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
         type.freeze();
-        //
-        Document doc = new Document();
+        Document doc;
+
+        doc = new Document();
         doc.add(new Field("content", "one", type));
         writer.addDocument(doc);
         //
         doc = new Document();
         doc.add(new Field("content", "two", type));
         writer.addDocument(doc);
-        //
+
         doc = new Document();
         doc.add(new Field("content", "three", type));
         writer.addDocument(doc);
@@ -61,6 +62,7 @@ public class TermQueryTester {
         TopDocs docs = searcher.search(new TermQuery(new Term("content", "two")), 10);
         Assert.assertEquals(docs.totalHits, 1);
         reader.close();
+
         writer.close();
     }
 
