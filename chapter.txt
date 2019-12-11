@@ -148,14 +148,14 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/0513/58.html
 
 6. 索引文件格式
 
-索引文件之cfs&&cfe
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0710/73.html
 索引文件之segments_N
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
-索引文件之fnm
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
 索引文件之si
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
+索引文件之cfs&&cfe
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0710/73.html
+索引文件之fnm
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
 索引文件之fdx&&fdt
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
 索引文件之tvx&&tvd
