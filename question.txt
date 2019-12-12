@@ -1,0 +1,10 @@
+1. IndexDeletionPolicy, SnapshotDeletionPolicy
+2. MergeScheduler
+3. DocumentsWriterPerThreadPool
+4. ReaderPooling
+5. FlushPolicy
+6. RAMPerThreadHardLimitMB
+7. IndexSort
+8. SoftDeletesField
+9. RAMPerThreadHardLimitMB
+10. MergedSegmentWarmer
