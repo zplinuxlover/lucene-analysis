@@ -19,11 +19,11 @@ https://blog.csdn.net/alex_xfboy/article/details/87948657
 https://lucene.apache.org/solr/guide/6_6/docvalues.html
 
 5. 文档更新流程
-索引文件锁LockFactory
+索引文件锁LockFactory (R)
 https://www.amazingkoala.com.cn/Lucene/Store/2019/0604/62.html
-Directory（上）
+Directory（上） (R)
 https://www.amazingkoala.com.cn/Lucene/Store/2019/0613/66.html
-Directory（下）
+Directory（下） (R)
 https://www.amazingkoala.com.cn/Lucene/Store/2019/0615/67.html
 两阶段生成索引文件之第一阶段 (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0521/61.html
@@ -85,11 +85,13 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1031/105.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
 索引文件之si (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
+索引文件之fdx&&fdt (R)
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
 FST算法（上）
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
-倒排表（上）
+倒排表（上）  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
-倒排表（中）
+倒排表（中）  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0428/55.html
 索引文件之tim&&tip
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0401/43.html
@@ -101,8 +103,6 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/41.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
 索引文件之fnm
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
-索引文件之fdx&&fdt
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
 索引文件之tvx&&tvd
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
 索引文件之liv
