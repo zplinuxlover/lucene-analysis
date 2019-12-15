@@ -72,6 +72,34 @@ public class TermQueryTester {
     }
 
     @Test
+    public void test_doc_position_pay() throws IOException {
+        Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
+        PayloadAnalyzer analyzer = new PayloadAnalyzer();
+        analyzer.setPayloadData("content", "one".getBytes(StandardCharsets.UTF_8), 0, 2);
+        IndexWriterConfig config = new IndexWriterConfig(analyzer);
+        config.setUseCompoundFile(false);
+        IndexWriter writer = new IndexWriter(dir, config);
+        //
+        FieldType type = new FieldType();
+        type.setStored(true);
+        type.setTokenized(true);
+        type.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+        type.setStoreTermVectors(true);
+        type.setStoreTermVectorPositions(true);
+        type.setStoreTermVectorOffsets(true);
+        type.freeze();
+        //
+        for (int t = 0; t <= 129; ++t) {
+            Document doc = new Document();
+            doc.add(new Field("content", "one one", type));
+            writer.addDocument(doc);
+        }
+        //
+        writer.commit();
+        writer.close();
+    }
+
+    @Test
     public void test_stored_fields() throws IOException {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
         PayloadAnalyzer analyzer = new PayloadAnalyzer();

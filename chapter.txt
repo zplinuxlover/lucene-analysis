@@ -101,6 +101,8 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/42.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/41.html
 索引文件之nvd&&nvm
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
+extra read
+https://www.iteye.com/blog/wwty-700193
 索引文件之fnm
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
 索引文件之tvx&&tvd
