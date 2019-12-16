@@ -127,7 +127,7 @@ SegmentReader（一）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1014/99.html
 
 4. 查询原理
-Collector(一)  (U)
+Collector(一)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0812/82.html
 Collector(二)  (U)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0813/83.html
