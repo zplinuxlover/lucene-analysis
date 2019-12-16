@@ -93,18 +93,18 @@ https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
 倒排表（中）  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0428/55.html
-索引文件之tim&&tip
+索引文件之tim&&tip  (N)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0401/43.html
-索引文件之doc
+索引文件之doc       (N)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/42.html
-索引文件之pos&&pay
+索引文件之pos&&pay  (N)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/41.html
+索引文件之tvx&&tvd   (N)
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
 索引文件之nvd&&nvm
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
 索引文件之fnm
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
-索引文件之tvx&&tvd
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
 索引文件之liv
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
 索引文件之dim&&dii
