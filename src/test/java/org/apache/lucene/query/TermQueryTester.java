@@ -123,6 +123,11 @@ public class TermQueryTester {
             doc.add(new Field("content", "one two one ", type));
             writer.addDocument(doc);
         }
+        {
+            Document doc = new Document();
+            doc.add(new Field("content", "three", type));
+            writer.addDocument(doc);
+        }
 
         writer.commit();
 

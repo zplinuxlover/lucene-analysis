@@ -1,16 +1,16 @@
 1.  lucene的field type
 
-DocValues
+DocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0218/33.html
-BinaryDocValues
+BinaryDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0412/49.html
-SortedSetDocValues
+SortedSetDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0412/48.html
-SortedDocValues
+SortedDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0219/34.html
-SortedNumericDocValues
+SortedNumericDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0410/47.html
-NumericDocValues
+NumericDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0409/46.html
 
 额外阅读
@@ -81,39 +81,38 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1030/104.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1031/105.html
 
 6. 索引文件格式
-索引文件之segments_N (R)
+BulkOperationPacked  (U)
+https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0213/31.html
+索引文件之segments_N  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
-索引文件之si (R)
+索引文件之si  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
-索引文件之fdx&&fdt (R)
+索引文件之fdx&&fdt  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
-FST算法（上）
+FST算法(上)  (U)
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
-倒排表（上）  (R)
+倒排表(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
-倒排表（中）  (R)
+倒排表(中)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0428/55.html
 索引文件之tim&&tip  (N)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0401/43.html
-索引文件之doc       (N)
+索引文件之doc  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/42.html
-索引文件之pos&&pay  (N)
+索引文件之pos&&pay  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/41.html
-索引文件之tvx&&tvd   (N)
+索引文件之tvx&&tvd  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
-索引文件之nvd&&nvm
+索引文件之nvd&&nvm  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
-索引文件之fnm
+索引文件之fnm  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
-索引文件之liv
+索引文件之liv  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
-索引文件之dim&&dii
+索引文件之dim&&dii  (U)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
-LZ4算法（上）
-https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0226/37.html
-Bkd-Tree
+Bkd-Tree  (U)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html
-
 
 3. SegmentReader
 SegmentReader（二）
@@ -165,8 +164,6 @@ Collector（一）
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0812/82.html
 ByteRefHash
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0218/32.html
-BulkOperationPacked
-https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0213/31.html
 去重编码(dedupAndEncode)
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0130/29.html
 Grouping
