@@ -79,6 +79,16 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1028/103.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1030/104.html
 执行段的合并（五）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1031/105.html
+近实时搜索NRT(一)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0916/93.html
+近实时搜索NRT(二)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0917/94.html
+近实时搜索NRT(三)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0920/95.html
+近实时搜索NRT(四)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0925/96.html
+近实时搜索NRT(五)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0929/97.html
 
 6. 索引文件格式
 BulkOperationPacked  (U)
@@ -143,7 +153,7 @@ https://www.amazingkoala.com.cn/Lucene/Search/2019/0821/87.html
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0823/88.html
 查询原理(四)  (R-N)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0827/89.html
-查询原理(五)
+查询原理(五)  (R-N)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0829/90.html
 LRUQueryCache
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0506/57.html
@@ -157,16 +167,6 @@ FieldComparator
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0415/50.html
 Automaton
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
-近实时搜索NRT(一)
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0916/93.html
-近实时搜索NRT(二)
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0917/94.html
-近实时搜索NRT(三)
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0920/95.html
-近实时搜索NRT(四)
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0925/96.html
-近实时搜索NRT(五)
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0929/97.html
 去重编码
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0130/29.html
 Grouping
