@@ -129,19 +129,19 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1014/99.html
 4. 查询原理
 Collector(一)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0812/82.html
-Collector(二)  (U)
+Collector(二)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0813/83.html
-Collector(三)  (U)
+Collector(三)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0814/84.html
-Collector(四)  (U)
+Collector(四)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0815/85.html
-查询原理(一)
+查询原理(一)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0820/86.html
-查询原理(二)
+查询原理(二)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0821/87.html
-查询原理(三)
+查询原理(三)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0823/88.html
-查询原理(四)
+查询原理(四)  (R-N)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0827/89.html
 查询原理(五)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0829/90.html
