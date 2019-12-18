@@ -79,6 +79,9 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1028/103.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1030/104.html
 执行段的合并（五）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1031/105.html
+额外阅读
+https://www.cnblogs.com/forfuture1978/archive/2010/03/06/1679501.html
+
 近实时搜索NRT(一)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0916/93.html
 近实时搜索NRT(二)
