@@ -33,7 +33,7 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1111/106.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1114/107.html
 构造IndexWriter对象（三） (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1118/108.html
-文档的增删改（上）
+文档的增删改(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0626/68.html
 文档的增删改（中）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0628/69.html
@@ -63,11 +63,11 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/0812/81.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0906/91.html
 文档提交之commit（二）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0909/92.html
-MergeScheduler
+MergeScheduler  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0519/60.html
-LogMergePolicy
+LogMergePolicy  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0513/58.html
-TieredMergePolicy
+TieredMergePolicy  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0516/59.html
 执行段的合并（一）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1024/101.html
@@ -99,6 +99,8 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
 索引文件之fdx&&fdt  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
+Automaton  (U)
+https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
 FST算法(上)  (U)
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
 倒排表(上)  (R)
@@ -155,18 +157,16 @@ https://www.amazingkoala.com.cn/Lucene/Search/2019/0823/88.html
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0827/89.html
 查询原理(五)  (R-N)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0829/90.html
-LRUQueryCache
+LRUQueryCache  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0506/57.html
-文档号合并(SHOULD)
+文档号合并(SHOULD)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2018/1217/26.html
-文档号合并(MUST)
+文档号合并(MUST)  (R)
 https://www.amazingkoala.com.cn/Lucene/Search/2018/1218/27.html
 BooleanQuery
 https://www.amazingkoala.com.cn/Lucene/Search/2018/1211/25.html
 FieldComparator
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0415/50.html
-Automaton
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
 去重编码
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0130/29.html
 Grouping
