@@ -69,15 +69,15 @@ LogMergePolicy  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0513/58.html
 TieredMergePolicy  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0516/59.html
-执行段的合并（一）
+执行段的合并(一)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1024/101.html
-执行段的合并（二）
+执行段的合并(二)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1025/102.html
-执行段的合并（三）
+执行段的合并(三)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1028/103.html
-执行段的合并（四）
+执行段的合并(四)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1030/104.html
-执行段的合并（五）
+执行段的合并(五)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1031/105.html
 额外阅读
 https://www.cnblogs.com/forfuture1978/archive/2010/03/06/1679501.html
