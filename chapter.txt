@@ -85,15 +85,15 @@ https://blog.csdn.net/kimichen123/article/details/77477251
 http://blog.mikemccandless.com/2011/02/visualizing-lucenes-segment-merges.html
 http://codepub.cn/2016/10/09/Lucene-sets-a-single-index-file-size-of-the-performance-test/
 
-近实时搜索NRT(一)
+近实时搜索NRT(一)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0916/93.html
-近实时搜索NRT(二)
+近实时搜索NRT(二)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0917/94.html
-近实时搜索NRT(三)
+近实时搜索NRT(三)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0920/95.html
-近实时搜索NRT(四)
+近实时搜索NRT(四)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0925/96.html
-近实时搜索NRT(五)
+近实时搜索NRT(五)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0929/97.html
 
 6. 索引文件格式
