@@ -1,16 +1,16 @@
 1.  lucene的field type
 
-DocValues
+DocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0218/33.html
-BinaryDocValues
+BinaryDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0412/49.html
-SortedSetDocValues
+SortedSetDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0412/48.html
-SortedDocValues
+SortedDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0219/34.html
-SortedNumericDocValues
+SortedNumericDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0410/47.html
-NumericDocValues
+NumericDocValues  (R)
 https://www.amazingkoala.com.cn/Lucene/DocValues/2019/0409/46.html
 
 额外阅读
@@ -33,89 +33,110 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1111/106.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1114/107.html
 构造IndexWriter对象（三） (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1118/108.html
-文档的增删改（上）
+文档的增删改(上)  (R)(R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0626/68.html
-文档的增删改（中）
+文档的增删改(中)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0628/69.html
-文档的增删改（下）（part 1）
+文档的增删改(下)(part 1)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0701/70.html
-文档的增删改（下）（part 2）
+文档的增删改(下)(part 2)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0704/71.html
-文档的增删改（下）（part 3）
+文档的增删改(下)(part 3)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0709/72.html
-文档提交之flush（一）
+文档提交之flush(一)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0716/74.html
-文档提交之flush（二）
+文档提交之flush(二)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0718/75.html
-文档提交之flush（三）
+文档提交之flush(三)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0725/76.html
-文档提交之flush（四）
+文档提交之flush(四)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0730/77.html
-文档提交之flush（五）
+文档提交之flush(五)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0801/78.html
-文档提交之flush（六）
+文档提交之flush(六)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0805/79.html
-文档提交之flush（七）
+文档提交之flush(七)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0807/80.html
-文档提交之flush（八
+文档提交之flush(八)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0812/81.html
-文档提交之commit（一）
+文档提交之commit(一)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0906/91.html
-文档提交之commit（二）
+文档提交之commit(二)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0909/92.html
-MergeScheduler
+MergeScheduler  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0519/60.html
-LogMergePolicy
+LogMergePolicy  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0513/58.html
-TieredMergePolicy
+TieredMergePolicy  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0516/59.html
-执行段的合并（一）
+执行段的合并(一)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1024/101.html
-执行段的合并（二）
+执行段的合并(二)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1025/102.html
-执行段的合并（三）
+执行段的合并(三)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1028/103.html
-执行段的合并（四）
+执行段的合并(四)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1030/104.html
-执行段的合并（五）
+执行段的合并(五)  (R-U)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1031/105.html
+额外阅读
+https://www.cnblogs.com/forfuture1978/archive/2010/03/06/1679501.html
+https://blog.csdn.net/kimichen123/article/details/77477251
+http://blog.mikemccandless.com/2011/02/visualizing-lucenes-segment-merges.html
+http://codepub.cn/2016/10/09/Lucene-sets-a-single-index-file-size-of-the-performance-test/
+
+近实时搜索NRT(一)  (R-U)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0916/93.html
+近实时搜索NRT(二)  (R-U)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0917/94.html
+近实时搜索NRT(三)  (R-U)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0920/95.html
+近实时搜索NRT(四)  (R-U)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0925/96.html
+近实时搜索NRT(五)  (R-U)
+https://www.amazingkoala.com.cn/Lucene/Index/2019/0929/97.html
 
 6. 索引文件格式
-索引文件之segments_N (R)
+BulkOperationPacked  (U)
+https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0213/31.html
+索引文件之segments_N  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
-索引文件之si (R)
+索引文件之si  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
-索引文件之fdx&&fdt (R)
+索引文件之fdx&&fdt  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
-FST算法（上）
+Automaton  (U)
+https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
+FST算法(上)  (U)
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
-倒排表（上）  (R)
+倒排表(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
-倒排表（中）  (R)
+倒排表(中)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0428/55.html
-索引文件之tim&&tip
+索引文件之tim&&tip  (N)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0401/43.html
-索引文件之doc
+索引文件之doc  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/42.html
-索引文件之pos&&pay
+索引文件之pos&&pay  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0324/41.html
-索引文件之nvd&&nvm
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
-extra read
-https://www.iteye.com/blog/wwty-700193
-索引文件之fnm
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
-索引文件之tvx&&tvd
+索引文件之tvx&&tvd  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0429/56.html
-索引文件之liv
+索引文件之nvd&&nvm  (R)
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
+索引文件之fnm  (R)
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
+索引文件之liv  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
-索引文件之dim&&dii
+索引文件之dim&&dii  (U)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
-LZ4算法（上）
-https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0226/37.html
-Bkd-Tree
+Bkd-Tree  (U)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html
-
+IntBlockPool
+https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
+ByteRefHash
+https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0218/32.html
+FixedBitSet
+https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0404/45.html
 
 3. SegmentReader
 SegmentReader（二）
@@ -124,59 +145,37 @@ SegmentReader（一）
 https://www.amazingkoala.com.cn/Lucene/Index/2019/1014/99.html
 
 4. 查询原理
-
-近实时搜索NRT（五）
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0929/97.html
-近实时搜索NRT（四）
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0925/96.html
-近实时搜索NRT（三）
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0920/95.html
-近实时搜索NRT（二）
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0917/94.html
-近实时搜索NRT（一）
-https://www.amazingkoala.com.cn/Lucene/Index/2019/0916/93.html
+Collector(一)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0812/82.html
+Collector(二)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0813/83.html
+Collector(三)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0814/84.html
+Collector(四)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0815/85.html
+查询原理(一)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0820/86.html
+查询原理(二)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0821/87.html
+查询原理(三)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0823/88.html
+查询原理(四)  (R-N)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0827/89.html
+查询原理(五)  (R-N)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0829/90.html
+LRUQueryCache  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2019/0506/57.html
+文档号合并(SHOULD)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2018/1217/26.html
+文档号合并(MUST)  (R)
+https://www.amazingkoala.com.cn/Lucene/Search/2018/1218/27.html
 BooleanQuery
 https://www.amazingkoala.com.cn/Lucene/Search/2018/1211/25.html
-Automaton
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
 FieldComparator
 https://www.amazingkoala.com.cn/Lucene/Search/2019/0415/50.html
-文档号合并（SHOULD）
-https://www.amazingkoala.com.cn/Lucene/Search/2018/1217/26.html
-文档号合并（MUST）
-https://www.amazingkoala.com.cn/Lucene/Search/2018/1218/27.html
-LRUQueryCache
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0506/57.html
-查询原理（五）终
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0829/90.html
-查询原理（四）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0827/89.html
-查询原理（三）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0823/88.html
-查询原理（二）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0821/87.html
-查询原理（一）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0820/86.html
-Collector（四）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0815/85.html
-Collector（三）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0814/84.html
-Collector（二）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0813/83.html
-Collector（一）
-https://www.amazingkoala.com.cn/Lucene/Search/2019/0812/82.html
-ByteRefHash
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0218/32.html
-BulkOperationPacked
-https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0213/31.html
-去重编码(dedupAndEncode)
+去重编码
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0130/29.html
 Grouping
 https://www.amazingkoala.com.cn/Lucene/2019/0124/28.html
-IntBlockPool
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
-工具类之FixedBitSet
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0404/45.html
 RoaringDocIdSet
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/1008/98.html
-
