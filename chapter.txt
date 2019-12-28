@@ -37,7 +37,7 @@ https://www.amazingkoala.com.cn/Lucene/Index/2019/1118/108.html
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0626/68.html
 文档的增删改(中)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0628/69.html
-文档的增删改(下)(part 1)
+文档的增删改(下)(part 1)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0701/70.html
 文档的增删改(下)(part 2)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0704/71.html
