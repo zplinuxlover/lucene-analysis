@@ -129,7 +129,7 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
 索引文件之dim&&dii  (U)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
-Bkd-Tree  (U)
+Bkd-Tree  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html
 IntBlockPool
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
