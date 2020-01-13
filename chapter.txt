@@ -131,11 +131,11 @@ Bkd-Tree  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html
 索引文件之dim&&dii  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
-IntBlockPool
+IntBlockPool  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
-ByteRefHash
+ByteRefHash  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0218/32.html
-FixedBitSet
+FixedBitSet  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0404/45.html
 
 3. SegmentReader

@@ -49,7 +49,7 @@ public class IntPointFieldTester {
         config.setUseCompoundFile(false);
         IndexWriter writer = new IndexWriter(dir, config);
         Document doc;
-        for (int t = 0; t < 20480; ++t) {
+        for (int t = 0; t < 7 * 1024; ++t) {
             doc = new Document();
             doc.add(new IntPoint("field", t));
             writer.addDocument(doc);
