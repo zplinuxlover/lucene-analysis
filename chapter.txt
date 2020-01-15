@@ -135,8 +135,6 @@ IntBlockPool  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
 ByteRefHash  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0218/32.html
-FixedBitSet  (R)
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0404/45.html
 
 3. SegmentReader
 SegmentReader（二）
