@@ -59,9 +59,9 @@ public class IntPointFieldTester {
         //
         IndexReader reader = DirectoryReader.open(dir);
         IndexSearcher searcher = new IndexSearcher(reader);
-        Query query = IntPoint.newRangeQuery("field", 1, 5);
+        Query query = IntPoint.newRangeQuery("field", 200, 5125);
         TopDocs docs = searcher.search(query, 10);
-        Assert.assertEquals(docs.totalHits, 5);
+        Assert.assertEquals(docs.totalHits, 4926);
         reader.close();
     }
 
