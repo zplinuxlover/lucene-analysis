@@ -32,7 +32,7 @@ public class TermQueryTester {
     public void test() throws IOException {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
         PayloadAnalyzer analyzer = new PayloadAnalyzer();
-        analyzer.setPayloadData("content", "hi".getBytes(StandardCharsets.UTF_8), 0, 2);
+        analyzer.setPayloadData("content", "pop".getBytes(StandardCharsets.UTF_8), 0, 2);
         IndexWriterConfig config = new IndexWriterConfig(analyzer);
         config.setUseCompoundFile(false);
         IndexWriter writer = new IndexWriter(dir, config);
@@ -48,17 +48,14 @@ public class TermQueryTester {
         //
         Document doc;
         //
-        doc = new Document();
-        doc.add(new Field("content", "one", type));
-        writer.addDocument(doc);
-        //
-        doc = new Document();
-        doc.add(new Field("content", "two", type));
-        writer.addDocument(doc);
-        //
-        doc = new Document();
-        doc.add(new Field("content", "three", type));
-        writer.addDocument(doc);
+        String[] strList = new String[]{
+                "mop", "moth", "pop", "star", "stop", "top"
+        };
+        for (final String str : strList) {
+            doc = new Document();
+            doc.add(new Field("content", str, type));
+            writer.addDocument(doc);
+        }
         //
         writer.commit();
         //
