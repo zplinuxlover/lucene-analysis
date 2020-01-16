@@ -107,7 +107,7 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
 Automaton  (U)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
-FST算法(上)  (U)
+FST算法(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
 倒排表(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
