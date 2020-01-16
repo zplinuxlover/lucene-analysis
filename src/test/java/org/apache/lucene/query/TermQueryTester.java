@@ -46,13 +46,11 @@ public class TermQueryTester {
         type.setStoreTermVectorOffsets(true);
         type.freeze();
         //
-        Document doc;
-        //
         String[] strList = new String[]{
                 "mop", "moth", "pop", "star", "stop", "top"
         };
         for (final String str : strList) {
-            doc = new Document();
+            Document doc = new Document();
             doc.add(new Field("content", str, type));
             writer.addDocument(doc);
         }
