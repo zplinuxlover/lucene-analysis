@@ -47,7 +47,7 @@ public class FSTTester {
         for (IntsRef term : terms) {
             pairs.add(new FSTTester.InputOutput<>(term, NO_OUTPUT));
         }
-        new FstCreator(dir, 0, pairs, outputs);
+        new FstCreator(dir, 0, pairs, outputs).create();
     }
 
     @After
@@ -76,15 +76,7 @@ public class FSTTester {
             final Builder<T> builder = new Builder<>(FST.INPUT_TYPE.BYTE1, 0, 0, true,
                     true, Integer.MAX_VALUE, outputs, true, 15);
             for (InputOutput<T> pair : pairs) {
-                if (pair.output instanceof List) {
-                    List<Long> longValues = (List<Long>) pair.output;
-                    final Builder<Object> builderObject = (Builder<Object>) builder;
-                    for (Long value : longValues) {
-                        builderObject.add(pair.input, value);
-                    }
-                } else {
-                    builder.add(pair.input, pair.output);
-                }
+                builder.add(pair.input, pair.output);
             }
             FST<T> fst = builder.finish();
             Random random = new Random();
