@@ -127,9 +127,9 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
 索引文件之liv  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
-Bkd-Tree  (R)
+Bkd-Tree  (R) (L3) (I)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html
-索引文件之dim&&dii  (R)
+索引文件之dim&&dii  (R) (L3) (I)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
 IntBlockPool  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
