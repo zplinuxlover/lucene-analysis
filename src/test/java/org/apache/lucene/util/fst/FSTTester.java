@@ -23,14 +23,16 @@ public class FSTTester {
     private String[] strings;
     //
     private IntsRef[] terms;
+    //
+    private long[] outputValues;
 
     @Before
     public void before() throws Throwable {
         FileUtils.forceMkdir(new File("/data/logs/lucene"));
         strings = new String[]{
-                "station", "commotion", "elation", "elastic", "plastic",
-                "stop", "ftop", "ftation", "stat"
+                "mop", "moth", "pop", "star", "stop", "top"
         };
+        this.outputValues = new long[]{100, 91, 72, 83, 54, 55};
         terms = new IntsRef[strings.length];
         for (int idx = 0; idx < strings.length; idx++) {
             terms[idx] = toIntsRef(strings[idx], 0);
@@ -41,13 +43,13 @@ public class FSTTester {
     @Test
     public void test_fsa() throws Throwable {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
-        final Outputs<Object> outputs = NoOutputs.getSingleton();
-        final Object NO_OUTPUT = outputs.getNoOutput();
         final List<FSTTester.InputOutput<Object>> pairs = new ArrayList<>(terms.length);
+        int index = 0;
         for (IntsRef term : terms) {
-            pairs.add(new FSTTester.InputOutput<>(term, NO_OUTPUT));
+            pairs.add(new FSTTester.InputOutput<>(strings[index], term, this.outputValues[index]));
+            ++index;
         }
-        new FstCreator(dir, 0, pairs, outputs).create();
+        new FstCreator(dir, 0, pairs, PositiveIntOutputs.getSingleton()).create();
     }
 
     @After
@@ -98,10 +100,13 @@ public class FSTTester {
      * Holds one input/output pair.
      */
     public static class InputOutput<T> implements Comparable<InputOutput<T>> {
+        //
+        public final String strRaw;
         public final IntsRef input;
         public final T output;
 
-        public InputOutput(IntsRef input, T output) {
+        public InputOutput(String strRaw, IntsRef input, T output) {
+            this.strRaw = strRaw;
             this.input = input;
             this.output = output;
         }
@@ -122,10 +127,8 @@ public class FSTTester {
 
     static IntsRef toIntsRef(String s, int inputMode, IntsRefBuilder ir) {
         if (inputMode == 0) {
-            // utf8
-            return toIntsRef(new BytesRef(s), ir);
+            return toIntsRef(new BytesRef(s.getBytes()), ir);
         } else {
-            // utf32
             return toIntsRefUTF32(s, ir);
         }
     }
