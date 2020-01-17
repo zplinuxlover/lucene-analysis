@@ -83,9 +83,6 @@ public class TermQueryTester {
         String[] strList = new String[]{
                 "0", "02", "01", "012", "013", "014", "02", "023", "0234", "03", "1"
         };
-        for (int t = 0; t < strList.length; ++t) {
-            strList[t] = String.format("a%d", t);
-        }
         for (final String str : strList) {
             Document doc = new Document();
             doc.add(new Field("content", str, type));
