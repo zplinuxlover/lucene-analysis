@@ -67,6 +67,43 @@ public class TermQueryTester {
     }
 
     @Test
+    public void test_tim() throws IOException {
+        Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
+        PayloadAnalyzer analyzer = new PayloadAnalyzer();
+        analyzer.setPayloadData("content", "pop".getBytes(StandardCharsets.UTF_8), 0, 2);
+        IndexWriterConfig config = new IndexWriterConfig(analyzer);
+        config.setUseCompoundFile(false);
+        IndexWriter writer = new IndexWriter(dir, config);
+        //
+        FieldType type = new FieldType();
+        type.setStored(true);
+        type.setTokenized(true);
+        type.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS);
+        type.freeze();
+        String[] strList = new String[]{
+                "0", "02", "01", "012", "013", "014", "02", "023", "0234", "03", "1"
+        };
+        for (int t = 0; t < strList.length; ++t) {
+            strList[t] = String.format("a%d", t);
+        }
+        for (final String str : strList) {
+            Document doc = new Document();
+            doc.add(new Field("content", str, type));
+            writer.addDocument(doc);
+        }
+        //
+        writer.commit();
+        //
+        IndexReader reader = DirectoryReader.open(dir);
+        IndexSearcher searcher = new IndexSearcher(reader);
+        TopDocs docs = searcher.search(new TermQuery(new Term("content", "two")), 10);
+        Assert.assertEquals(docs.totalHits, 1);
+        reader.close();
+        //
+        writer.close();
+    }
+
+    @Test
     public void test_stored_fields() throws IOException {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
         PayloadAnalyzer analyzer = new PayloadAnalyzer();
