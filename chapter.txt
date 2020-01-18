@@ -105,9 +105,7 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0610/65.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0605/63.html
 索引文件之fdx&&fdt  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0301/38.html
-Automaton  (U)
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html
-FST算法(上)  (U)
+FST算法(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/yasuocunchu/2019/0220/35.html
 倒排表(上)  (R)
 https://www.amazingkoala.com.cn/Lucene/Index/2019/0222/36.html
@@ -127,16 +125,14 @@ https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0305/39.html
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0606/64.html
 索引文件之liv  (R)
 https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0425/54.html
-索引文件之dim&&dii  (U)
-https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
-Bkd-Tree  (U)
+Bkd-Tree  (R) (I)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0422/52.html
-IntBlockPool
+索引文件之dim&&dii  (R) (I)
+https://www.amazingkoala.com.cn/Lucene/suoyinwenjian/2019/0424/53.html
+IntBlockPool  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2018/1209/24.html
-ByteRefHash
+ByteRefHash  (R)
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0218/32.html
-FixedBitSet
-https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0404/45.html
 
 3. SegmentReader
 SegmentReader（二）
@@ -179,3 +175,5 @@ Grouping
 https://www.amazingkoala.com.cn/Lucene/2019/0124/28.html
 RoaringDocIdSet
 https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/1008/98.html
+Automaton  (U)
+https://www.amazingkoala.com.cn/Lucene/gongjulei/2019/0417/51.html

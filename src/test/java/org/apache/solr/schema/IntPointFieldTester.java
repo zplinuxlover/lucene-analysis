@@ -49,18 +49,19 @@ public class IntPointFieldTester {
         config.setUseCompoundFile(false);
         IndexWriter writer = new IndexWriter(dir, config);
         Document doc;
-        for (int t = 0; t < 16; ++t) {
+        for (int t = 0; t < 7 * 1024; ++t) {
             doc = new Document();
             doc.add(new IntPoint("field", t));
             writer.addDocument(doc);
         }
+        writer.flush();
         writer.commit();
         //
         IndexReader reader = DirectoryReader.open(dir);
         IndexSearcher searcher = new IndexSearcher(reader);
-        Query query = IntPoint.newRangeQuery("field", 1, 5);
+        Query query = IntPoint.newRangeQuery("field", 200, 5125);
         TopDocs docs = searcher.search(query, 10);
-        Assert.assertEquals(docs.totalHits, 5);
+        Assert.assertEquals(docs.totalHits, 4926);
         reader.close();
     }
 
