@@ -91,9 +91,9 @@ public class TermQueryTester {
         //
         writer.commit();
         //
-        IndexReader reader = DirectoryReader.open(dir);
+        IndexReader reader = DirectoryReader.open(writer);
         IndexSearcher searcher = new IndexSearcher(reader);
-        TopDocs docs = searcher.search(new TermQuery(new Term("content", "two")), 10);
+        TopDocs docs = searcher.search(new TermQuery(new Term("content", "013")), 10);
         Assert.assertEquals(docs.totalHits, 1);
         reader.close();
         //

@@ -79,6 +79,16 @@ public class IndexWriterTester {
         doc.add(new Field("content", "one", type));
         writer.addDocument(doc);
         //
+        doc = new Document();
+        doc.add(new Field("content", "two", type));
+        writer.addDocument(doc);
+        //
+        doc = new Document();
+        doc.add(new Field("content", "three", type));
+        writer.addDocument(doc);
+        //
+        writer.deleteDocuments(new TermQuery(new Term("content", "two")));
+        //
         writer.commit();
         IndexReader reader = DirectoryReader.open(dir);
         IndexSearcher searcher = new IndexSearcher(reader);
@@ -86,7 +96,6 @@ public class IndexWriterTester {
         Assert.assertEquals(docs.totalHits, 1);
         reader.close();
     }
-
 
     @After
     public void after() throws IOException {
