@@ -60,7 +60,6 @@ public class IndexWriterTester {
         reader.close();
     }
 
-
     @Test
     public void test_2() throws IOException {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
@@ -104,6 +103,28 @@ public class IndexWriterTester {
         Assert.assertEquals(docs.totalHits, 0);
         docs = searcher.search(new TermQuery(new Term("content", "three")), 10);
         Assert.assertEquals(docs.totalHits, 1);
+        reader.close();
+    }
+
+    @Test
+    public void test_3() throws IOException {
+        Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
+        PayloadAnalyzer analyzer = new PayloadAnalyzer();
+        analyzer.setPayloadData("content", "one".getBytes(StandardCharsets.UTF_8), 0, 3);
+        IndexWriterConfig config = new IndexWriterConfig(analyzer);
+        config.setUseCompoundFile(false);
+        IndexWriter writer = new IndexWriter(dir, config);
+        Document doc = new Document();
+        doc.add(new Field("content", "one", type));
+        writer.addDocument(doc);
+        //
+        writer.deleteDocuments(new Term("content", "one"));
+        writer.flush();
+
+        IndexReader reader = DirectoryReader.open(dir);
+        IndexSearcher searcher = new IndexSearcher(reader);
+        TopDocs docs = searcher.search(new TermQuery(new Term("content", "one")), 10);
+        Assert.assertEquals(docs.totalHits, 0);
         reader.close();
     }
 
