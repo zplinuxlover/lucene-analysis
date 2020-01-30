@@ -119,12 +119,18 @@ public class IndexWriterTester {
         writer.addDocument(doc);
         //
         writer.deleteDocuments(new Term("content", "one"));
+        //
+        doc = new Document();
+        doc.add(new Field("content", "one", type));
+        writer.addDocument(doc);
+        //
         writer.flush();
+        // writer.commit();
 
-        IndexReader reader = DirectoryReader.open(dir);
+        IndexReader reader = DirectoryReader.open(writer);
         IndexSearcher searcher = new IndexSearcher(reader);
         TopDocs docs = searcher.search(new TermQuery(new Term("content", "one")), 10);
-        Assert.assertEquals(docs.totalHits, 0);
+        Assert.assertEquals(docs.totalHits, 1);
         reader.close();
     }
 
