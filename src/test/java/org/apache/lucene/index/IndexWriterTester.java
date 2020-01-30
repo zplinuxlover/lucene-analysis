@@ -60,6 +60,7 @@ public class IndexWriterTester {
         reader.close();
     }
 
+
     @Test
     public void test_2() throws IOException {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
