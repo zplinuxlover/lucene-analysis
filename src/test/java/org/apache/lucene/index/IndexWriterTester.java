@@ -1,6 +1,7 @@
 package org.apache.lucene.index;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.FieldType;
@@ -63,12 +64,19 @@ public class IndexWriterTester {
     @Test
     public void test_2() throws IOException {
         Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
-        PayloadAnalyzer analyzer = new PayloadAnalyzer();
-        analyzer.setPayloadData("content", "one".getBytes(StandardCharsets.UTF_8), 0, 3);
-        IndexWriterConfig config = new IndexWriterConfig(analyzer);
+        IndexWriterConfig config = new IndexWriterConfig(new WhitespaceAnalyzer());
         config.setUseCompoundFile(false);
         config.setMaxBufferedDocs(2);
         IndexWriter writer = new IndexWriter(dir, config);
+        //
+        FieldType type = new FieldType();
+        type.setStored(true);
+        type.setTokenized(true);
+        type.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+        type.setStoreTermVectors(true);
+        type.setStoreTermVectorPositions(true);
+        type.setStoreTermVectorOffsets(true);
+        type.freeze();
         //
         Document doc = new Document();
         doc.add(new Field("content", "one", type));
