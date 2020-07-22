@@ -2,12 +2,10 @@ apply plugin: "java"
 
 version = '1.0.0.RELEASE'
 
-sourceCompatibility = 1.8
-
 [compileJava, compileTestJava]*.options*.encoding = 'utf-8'
 
 ext {
-    solrVersion = "9.0.0-SNAPSHOT"
+    solrVersion = "7.5.0"
 }
 
 sourceSets {
@@ -18,8 +16,9 @@ sourceSets {
 }
 
 repositories {
-    maven { url 'https://maven.aliyun.com/repository/public/' }
+    maven { url 'https://maven.aliyun.com/repository/public' }
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
