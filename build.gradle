@@ -5,7 +5,8 @@ version = '1.0.0.RELEASE'
 [compileJava, compileTestJava]*.options*.encoding = 'utf-8'
 
 ext {
-    solrVersion = "7.5.0"
+    // solrVersion = "7.5.0"
+    solrVersion = "8.5.2"
 }
 
 sourceSets {
@@ -16,6 +17,7 @@ sourceSets {
 }
 
 repositories {
+    mavenLocal()
     maven { url 'https://maven.aliyun.com/repository/public' }
     mavenCentral()
     jcenter()

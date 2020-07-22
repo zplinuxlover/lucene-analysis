@@ -46,14 +46,14 @@ public class TimTester {
     @Test
     public void test() throws Throwable {
         final String[] docList = new String[]{
-                "a b c",
-                "a c c",
-                "a c d",
-                "a c e a",
-                "a c e b",
-                "a c e e",
-                "a c e f",
-                "a c e g"
+                "abc",
+                "acc",
+                "acd",
+                "acea",
+                "aceb",
+                "acee",
+                "acef",
+                "aceg"
         };
         for (final String str : docList) {
             Document doc = new Document();
