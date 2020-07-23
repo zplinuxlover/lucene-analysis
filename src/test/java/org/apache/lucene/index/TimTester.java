@@ -1,5 +1,6 @@
 package org.apache.lucene.index;
 
+import com.google.common.collect.Sets;
 import org.apache.commons.io.FileUtils;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
@@ -15,6 +16,9 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.IntStream;
 
 public class TimTester {
 
@@ -45,16 +49,26 @@ public class TimTester {
 
     @Test
     public void test() throws Throwable {
-        final String[] docList = new String[]{
-                "abc",
-                "acc",
-                "acd",
-                "acea",
-                "aceb",
-                "acee",
-                "acef",
-                "aceg"
-        };
+        Set<String> docList = Sets.newTreeSet();
+        StringBuilder builder;
+        for (int t = 0; t < 32; ++t) {
+            if (t < 26) {
+                builder = new StringBuilder();
+                builder.append("a").append((char) ('A' + t));
+                docList.add(builder.toString());
+                builder = new StringBuilder();
+                builder.append("ab").append((char) ('A' + t));
+                docList.add(builder.toString());
+            } else {
+                builder = new StringBuilder();
+                builder.append("a").append((char) ('a' + t - 26));
+                docList.add(builder.toString());
+                builder = new StringBuilder();
+                builder.append("ab").append((char) ('a' + t - 26));
+                docList.add(builder.toString());
+            }
+        }
+        System.out.println(docList);
         for (final String str : docList) {
             Document doc = new Document();
             doc.add(new Field("content", str, type));
