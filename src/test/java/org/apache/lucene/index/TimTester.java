@@ -48,8 +48,23 @@ public class TimTester {
     }
 
     @Test
+    public void test_1() throws Throwable {
+        final Set<String> docList = Sets.newTreeSet();
+        IntStream.range(0, 26).forEach(t -> docList.add("A" + (char) ('a' + t)));
+        IntStream.range(0, 26).forEach(t -> docList.add("A" + (char) ('A' + t)));
+        IntStream.range(0, 10).forEach(t -> docList.add("A" + (char) ('0' + t)));
+        System.out.println(docList);
+        for (final String str : docList) {
+            Document doc = new Document();
+            doc.add(new Field("content", str, type));
+            writer.addDocument(doc);
+        }
+        writer.flush();
+    }
+
+    @Test
     public void test() throws Throwable {
-        Set<String> docList = Sets.newTreeSet();
+        final Set<String> docList = Sets.newTreeSet();
         for (int t = 0; t < 32; ++t) {
             StringBuilder builder = new StringBuilder();
             builder.append("a").append(t < 26 ? (char) ('A' + t) : (char) ('a' + t - 26));
