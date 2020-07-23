@@ -34,7 +34,7 @@ public class TimTester {
         Directory dir = FSDirectory.open(Paths.get(tmpDir + "/" + "lucene"));
         IndexWriterConfig config = new IndexWriterConfig(new WhitespaceAnalyzer());
         config.setUseCompoundFile(false);
-        config.setMaxBufferedDocs(2);
+        config.setMaxBufferedDocs(10000);
         this.writer = new IndexWriter(dir, config);
         //
         this.type = new FieldType();
@@ -50,23 +50,15 @@ public class TimTester {
     @Test
     public void test() throws Throwable {
         Set<String> docList = Sets.newTreeSet();
-        StringBuilder builder;
         for (int t = 0; t < 32; ++t) {
-            if (t < 26) {
-                builder = new StringBuilder();
-                builder.append("a").append((char) ('A' + t));
-                docList.add(builder.toString());
-                builder = new StringBuilder();
-                builder.append("ab").append((char) ('A' + t));
-                docList.add(builder.toString());
-            } else {
-                builder = new StringBuilder();
-                builder.append("a").append((char) ('a' + t - 26));
-                docList.add(builder.toString());
-                builder = new StringBuilder();
-                builder.append("ab").append((char) ('a' + t - 26));
-                docList.add(builder.toString());
-            }
+            StringBuilder builder = new StringBuilder();
+            builder.append("a").append(t < 26 ? (char) ('A' + t) : (char) ('a' + t - 26));
+            docList.add(builder.toString());
+        }
+        for (int t = 0; t < 32; ++t) {
+            StringBuilder builder = new StringBuilder();
+            builder.append("b").append(t < 26 ? (char) ('A' + t) : (char) ('a' + t - 26));
+            docList.add(builder.toString());
         }
         System.out.println(docList);
         for (final String str : docList) {
