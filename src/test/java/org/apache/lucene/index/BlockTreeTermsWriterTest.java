@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.IntStream;
 
-public class TimTester {
+public class BlockTreeTermsWriterTest {
 
     private String tmpDir = "/tmp";
 
@@ -53,6 +53,7 @@ public class TimTester {
         IntStream.range(0, 26).forEach(t -> docList.add("A" + (char) ('a' + t)));
         IntStream.range(0, 26).forEach(t -> docList.add("A" + (char) ('A' + t)));
         IntStream.range(0, 10).forEach(t -> docList.add("A" + (char) ('0' + t)));
+        docList.add("B");
         System.out.println(docList);
         for (final String str : docList) {
             Document doc = new Document();
