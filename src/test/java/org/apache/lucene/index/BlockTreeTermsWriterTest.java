@@ -64,7 +64,7 @@ public class BlockTreeTermsWriterTest {
     }
 
     @Test
-    public void test() throws Throwable {
+    public void test_2() throws Throwable {
         final Set<String> docList = Sets.newTreeSet();
         for (int t = 0; t < 32; ++t) {
             StringBuilder builder = new StringBuilder();
