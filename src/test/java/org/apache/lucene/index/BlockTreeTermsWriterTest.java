@@ -48,7 +48,7 @@ public class BlockTreeTermsWriterTest {
     }
 
     @Test
-    public void test_1() throws Throwable {
+    public void test_tim_tip() throws Throwable {
         final Set<String> docList = Sets.newTreeSet();
         IntStream.range(0, 26).forEach(t -> docList.add("A" + (char) ('a' + t)));
         IntStream.range(0, 26).forEach(t -> docList.add("A" + (char) ('A' + t)));
