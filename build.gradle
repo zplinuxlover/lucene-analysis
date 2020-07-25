@@ -6,7 +6,7 @@ version = '1.0.0.RELEASE'
 
 ext {
     // solrVersion = "7.5.0"
-    solrVersion = "8.6.0"// 9.0.0-SNAPSHOT   8.5.2
+    solrVersion = "8.5.2"// 9.0.0-SNAPSHOT   8.5.2
 }
 
 sourceSets {
