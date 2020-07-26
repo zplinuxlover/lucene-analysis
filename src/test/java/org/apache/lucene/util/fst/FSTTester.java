@@ -20,6 +20,10 @@ import java.util.Random;
 
 public class FSTTester {
 
+    String dirPath = "/tmp/lucene";
+
+    Directory dir;
+
     private String[] strings;
     //
     private IntsRef[] terms;
@@ -28,7 +32,7 @@ public class FSTTester {
 
     @Before
     public void before() throws Throwable {
-        FileUtils.forceMkdir(new File("/data/logs/lucene"));
+        FileUtils.forceMkdir(new File(dirPath));
         strings = new String[]{
                 "mop", "moth", "pop", "star", "stop", "top"
         };
@@ -38,11 +42,11 @@ public class FSTTester {
             terms[idx] = toIntsRef(strings[idx], 0);
         }
         Arrays.sort(terms);
+        this.dir = FSDirectory.open(Paths.get(dirPath));
     }
 
     @Test
     public void test_fsa() throws Throwable {
-        Directory dir = FSDirectory.open(Paths.get("/data/logs/lucene"));
         final List<FSTTester.InputOutput<Object>> pairs = new ArrayList<>(terms.length);
         int index = 0;
         for (IntsRef term : terms) {
@@ -54,7 +58,7 @@ public class FSTTester {
 
     @After
     public void after() throws IOException {
-        FileUtils.deleteDirectory(new File("/data/logs/lucene"));
+        FileUtils.deleteDirectory(new File(dirPath));
     }
 
     public static class FstCreator<T> {
