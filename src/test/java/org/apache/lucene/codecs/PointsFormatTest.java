@@ -48,6 +48,7 @@ public class PointsFormatTest {
         final List<Integer> points = Lists.newArrayList();
         IntStream.range(0, 3000).forEach(t -> points.add(t));
         Collections.shuffle(points);
+        System.out.println(points);
         for (int point : points) {
             this.writer.addDocument(Lists.newArrayList(new IntPoint("age", point)));
         }
