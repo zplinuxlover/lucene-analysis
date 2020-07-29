@@ -11,9 +11,11 @@ import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.StandardDirectoryReader;
+import org.apache.lucene.search.Collector;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.PointRangeQuery;
 import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.TopScoreDocCollector;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.After;
@@ -29,6 +31,8 @@ import java.util.stream.IntStream;
 
 public class PointsFormatTest {
 
+    private final int pointCount = 15 * 1024;
+
     private String tmpDir = "/tmp";
 
     private IndexWriter writer;
@@ -39,14 +43,14 @@ public class PointsFormatTest {
         Directory dir = FSDirectory.open(Paths.get(tmpDir + "/" + "lucene"));
         IndexWriterConfig config = new IndexWriterConfig(new WhitespaceAnalyzer());
         config.setUseCompoundFile(false);
-        config.setMaxBufferedDocs(10000);
+        config.setMaxBufferedDocs(Integer.MAX_VALUE);
         this.writer = new IndexWriter(dir, config);
     }
 
     @Test
     public void test() throws Throwable {
         final List<Integer> points = Lists.newArrayList();
-        IntStream.range(0, 3000).forEach(t -> points.add(t));
+        IntStream.range(0, pointCount).forEach(t -> points.add(t));
         Collections.shuffle(points);
         System.out.println(points);
         for (int point : points) {
@@ -55,9 +59,9 @@ public class PointsFormatTest {
         writer.flush();
         DirectoryReader reader = StandardDirectoryReader.open(writer);
         IndexSearcher search = new IndexSearcher(reader);
-        TopDocs docs = search.search(IntPoint.newRangeQuery("age", 0, 3000), 10000);
+        TopScoreDocCollector collector = TopScoreDocCollector.create(pointCount, Integer.MAX_VALUE);
+        search.search(IntPoint.newRangeQuery("age", pointCount / 2 - 100, pointCount / 2 + 100), collector);
         reader.close();
-        Assert.assertEquals(3000, docs.totalHits.value);
     }
 
     @After
