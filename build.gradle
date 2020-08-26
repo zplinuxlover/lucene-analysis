@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+    // h2 database
+    compile "com.h2database:h2:1.4.200"
     // lucene
     compile "org.apache.lucene:lucene-core:${solrVersion}"
     compile "org.apache.lucene:lucene-queryparser:${solrVersion}"
