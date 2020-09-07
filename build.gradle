@@ -1,5 +1,7 @@
 apply plugin: "java"
 
+archivesBaseName = "solr-components"
+
 version = '1.0.0.RELEASE'
 
 [compileJava, compileTestJava]*.options*.encoding = 'utf-8'
@@ -24,6 +26,7 @@ repositories {
 }
 
 dependencies {
+    compile "com.alibaba:fastjson:1.2.68"
     // h2 database
     compile "com.h2database:h2:1.4.200"
     // lucene
@@ -45,6 +48,11 @@ dependencies {
     compile "com.google.code.gson:gson:2.4"
     testCompile "org.apache.solr:solr-test-framework:${solrVersion}"
     testCompile 'junit:junit:4.12'
+}
+
+task installDist(type: Copy, dependsOn: [jar]) {
+    from buildDir.getCanonicalPath() + "/libs"
+    into "/Volumes/files/solr-8.5.2/server/solr-webapp/webapp/WEB-INF/lib"
 }
 
 
