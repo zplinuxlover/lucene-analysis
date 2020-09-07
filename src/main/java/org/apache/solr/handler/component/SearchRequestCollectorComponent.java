@@ -44,16 +44,18 @@ public class SearchRequestCollectorComponent extends SearchComponent {
 
     @Override
     public void prepare(ResponseBuilder rb) throws IOException {
-        SolrParams solrParams = rb.req.getParams();
-        String param = solrParams.get(CommonParams.DISTRIB, Boolean.TRUE.toString());
-        if (StringUtils.equals(param, Boolean.TRUE.toString())) {
-            final Map<String, String[]> searchParams = Maps.newHashMap();
-            Iterator<Map.Entry<String, String[]>> it = solrParams.iterator();
-            while (it.hasNext()) {
-                Map.Entry<String, String[]> entry = it.next();
-                searchParams.put(entry.getKey(), entry.getValue());
+        if (this.debugEnabled) {
+            SolrParams solrParams = rb.req.getParams();
+            String param = solrParams.get(CommonParams.DISTRIB, Boolean.TRUE.toString());
+            if (StringUtils.equals(param, Boolean.TRUE.toString())) {
+                final Map<String, String[]> searchParams = Maps.newHashMap();
+                Iterator<Map.Entry<String, String[]>> it = solrParams.iterator();
+                while (it.hasNext()) {
+                    Map.Entry<String, String[]> entry = it.next();
+                    searchParams.put(entry.getKey(), entry.getValue());
+                }
+                LOGGER.info("{}", JSON.toJSONString(searchParams));
             }
-            LOGGER.info("{}", JSON.toJSONString(searchParams));
         }
     }
 
